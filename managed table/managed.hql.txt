@@ -1,0 +1,5 @@
+create table employers ( id int , fname string , naissance int , salaire int ) 
+row format delimited 
+fields terminated by ',' 
+stored as textfile ; 
+load data inpath '/hive/employers.txt' into table employers ; 
