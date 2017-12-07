@@ -1,0 +1,5 @@
+create external table employer_ext (id int , fname string , naissance int, salaire int) 
+row format delimited 
+fields terminated by ',' 
+stored as textfile 
+location '/hive/employers';
